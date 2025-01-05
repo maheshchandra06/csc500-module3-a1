@@ -1,5 +1,5 @@
 # This is a sample Python script.
-# It asks user to enter year and month and displays calender for that month along with holidays
+# It asks user to enter year and month and displays calendar for that month along with holidays
 import calendar
 
 if __name__ == '__main__':
@@ -22,9 +22,12 @@ if __name__ == '__main__':
     if year % 4 == 0 : leapYear = ' leap'
     print ("\n{} is the First Day of the{} year {} and month {}".format(daysOfWeek[firstDayOfMonth],leapYear,year, calendar.month_name[month]))
 
+    #Print Calendar - White Spaces
     for j in range(0, firstDayOfMonth):
         print("{1:>2} \t {0:<10}".format('',''),end='\t')
     j = firstDayOfMonth
+
+    #Print Calendar
     for i in range(0, noOfDaysInMonth):
         if j>6:
             j=0
