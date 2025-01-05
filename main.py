@@ -1,4 +1,5 @@
 # This is a sample Python script.
+# It asks user to enter year and month and displays calender for that month along with holidays
 import calendar
 
 if __name__ == '__main__':
